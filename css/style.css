@@ -1,0 +1,395 @@
+*{
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
+}
+.clear{
+	clear:both;
+	list-style: none;
+}
+.close{
+	padding-top: 70px;
+	text-align: center;
+}
+	.close_img{
+		width: 250px;
+		height: 250px;
+	}
+	.close_text{
+		margin-top: 20px;
+	}
+/* 警告框样式 */
+.contant_alert{
+	position: relative;
+	margin: 20px auto;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 20px;
+	box-shadow: 0px 2px 4px 0px rgb(240,242,245);
+}	
+	.contant_alert_box{
+		position: absolute;
+		top: 30px;
+		left: 20px;
+	}
+	.contant_conflict_box{
+		
+	}
+		.contant_alert_box img{
+			
+		}
+		.contant_alert_box span{
+			color:red;
+		}
+	.contant_alert_conflict{
+		text-align: center;
+	}
+	.contant_alert_conflict span{
+		color: rgb(34,60,242);
+	}
+	.contant_alert_risk{
+		position: absolute;
+		right: 10px;
+		bottom: 0;
+		font-size: 13px;
+		color: rgb(24,144,255);
+	}
+/*头部样式*****************************************************/
+.header{
+	width: 100%;
+	height: 50px;
+	background-color: #0e0042;
+}
+	.header_img{
+		float: left;
+		width: 90px;
+		height: 20px;
+		margin-top: 16px;
+		margin-left: 20px;
+	}
+	.header_title_box{
+		float: left;
+		margin-left: 15px;
+		margin-top: 15px;
+		padding-left: 10px;
+		border-left: 1px solid #fff;
+	}
+		.header_title{
+			font-size: 20px;
+			color: #fff;
+		}
+		.header_title_test{
+			font-size:17px;
+			color:red;
+		}
+/* 头部结束 ***********************************************/
+/* 搜索样式 */
+.contant{
+	padding-left: 30px;
+}
+	.contant_title{
+		padding: 30px 0 18px 0;
+		font-size: 21px;
+		font-weight: 600;
+		border-bottom: 1px solid #f0f2f5;
+	}
+	.contant_card{
+		padding: 10px 0 0 0;
+	}
+		.contant_card_list{
+			cursor:pointer;
+			list-style: none;
+			float: left;
+			padding: 10px;
+			text-align: center;
+			border:1px solid #d9d9d9;
+			color:#595959;
+			font-size: 14px;
+			font-weight: 400;
+		}
+		.contant_card_list_active{
+			border:1px solid #1890ff;
+			color:#1890ff;
+			font-weight: 600;
+		}
+	.contant_search{
+		margin-top: 24px;
+	}
+		.contant_search_input{
+			float: left;
+			width: 75%;
+			height: 33px;
+			border:1px solid #d9d9d9;
+			text-indent:8px;
+		}
+		.contant_search_pointer{
+			float: left;
+			width: 48px;
+			height: 35px;
+			text-align: center;
+			/* line-height: 43px; */
+			background-color: #1890ff;
+			cursor: pointer;
+		}
+			.contant_search_pointer img{
+				margin-top: 8px;
+			}
+		.contant_search_list li{
+			list-style: none;
+			padding: 20px 30px 0 0;
+		}
+		.contant_search_img{
+			float: left;
+			height: 17px;
+			width: 17px;
+			margin-top: 4px;
+			line-height: 19px;
+			background: url('../image/circle.png') no-repeat;
+			background-position: 16.5% 0;
+		}
+		.contant_search_name{
+			float: left;
+			font-size: 19px;
+			padding-left: 12px;
+			font-weight: 600;			color:#333;
+		}
+		.contant_search_more{
+			cursor:pointer;
+			float: right;
+			font-size: 14px;
+			line-height: 30px;
+			color:#1890ff;
+		}
+		.contant_search_text{
+			margin-left: 20px;
+			padding: 10px;
+			border-bottom: 1px solid #e8e8e8;
+		}
+		/* 搜索结束 */
+/* ************患者画像样式************** */
+.contant_pic{
+	position: relative;
+	box-sizing: border-box;
+}
+	/* 既往病史 */
+	.contant_pic_history{
+		position: absolute;
+		top:0;
+		left: 0;
+		height: 300px;
+		width: 33%;
+	}
+		.contant_pic_history p{
+			float: left;
+			font-size: 14px;
+			padding: 5px;
+			border:1px solid #0187ED;
+		}
+	/* 第几次访问 */
+	.contant_pic_number{
+		position: absolute;
+		top: 0;
+		left: 33%;
+		width: 33%;
+		margin-top: 20px;
+		
+	}
+	/* 历史用药 */
+	.contant_pic_medicine{
+		position: absolute;
+		top:300px;
+		left: 0;
+		width: 33%;
+		height: 460px;
+	}
+	/* 近一年检查检验 */
+	.contant_pic_detection{
+		position: absolute;
+		top:0;
+		left: 66%;
+		width: 33%;
+		height: 760px;
+		margin-bottom: 50px;
+	}
+	/* 在本院体检上一次 */
+	.contant_pic_last{
+		position: absolute;
+		top: 600px;
+		left: 33%;
+		width: 33%;
+	}
+		.pic_num_box{
+			box-sizing: border-box;
+			margin: 0 auto;
+			width: 80%;
+			height: 100%;
+			padding: 5px;
+			text-align: center;
+			font-size: 15px;
+			font-weight: 600;
+		}
+			.pic_num_box p{
+				display: inline-block;
+				padding: 0 10px;
+				border:1px solid rgb(34,158,253);
+			}
+			.pic_num_box span{
+				color:#FF6B00;
+				font-size: 20px;
+			}
+	/* 画像和年龄 */
+	.contant_pic_image{
+		position: absolute;
+		top: 200px;
+		left: 33%;
+		width: 33%;
+		text-align: center;
+	}
+		.pic_image_img{
+			width: 70%;
+			max-width: 350px;
+		}
+		.pic_image_age{
+			
+		}
+	/* 外边框的样式 */
+	.contant_pic_box{
+		box-sizing: border-box;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 50px 10px 10px 10px;
+		background-color: rgb(34,158,253);
+	}
+		.pic_box_in{
+			box-sizing: border-box;
+			background-color: #fff;
+			margin: 0 auto;
+			width: 100%;
+			height: 100%;
+			padding: 5% 10% 0 10%;
+			overflow: hidden;
+		}	
+			.pic_box_in table{
+				width: 100%;
+				text-align: center;
+			}
+			.pic_box_in thead{
+				background-color: #CFEAFE;
+			}
+			.pic_box_in td{
+				color:#666666;
+				font-size: 14px;
+				padding: 5px 0;
+				border-bottom: 1px solid #229EFD;
+			}
+		.pic_white_box{
+			position: absolute;
+			top:0;
+			width: 100%;
+			height: 20px;
+			background-color: #fff;
+		}
+		.pic_title{
+			position: absolute;
+			top:10px;
+			width: 100%;
+			text-align: center;
+			font-size: 15px ;
+			color:#fff;
+		}
+		.pic_title span{
+			padding: 5px 20px;
+			background-color: #1280D4;
+		}
+		/* 患者画像结束 */
+/* 医保规则查询 */
+.contant_rules{
+	padding-right: 30px;
+	margin-top: 15px;
+}
+	/* 以下为首页 */
+	.contant_rules_box{
+		width: 400px;
+		float: left;
+		margin: 30px 30px 0 20px;
+	}
+		.contant_rules_nomal{
+			margin-top: 10px;
+			padding: 10px 0px;
+			box-sizing: border-box;
+			text-align: center;
+			font-size: 13px;
+			color:#2A72DB;
+			cursor: pointer;
+			background-color: #CDE9FF;
+		}
+	/* 以下为分页面的样式 */
+	.contant_rules_input{
+		width: 90%;
+		height: 30px;
+		margin-bottom: 10px;
+		border:1px solid rgb(233,233,233);
+	}
+	.contant_rules_everybox{
+		float: left;
+		width: 80%;
+	}
+		.contant_rules_clues{
+			float: left;
+		}
+			.contant_rules_clues span{
+				float: right;
+				font-size: 13px;
+			}
+			.contant_rules_clues input{
+				border:1px solid rgb(233,233,233);
+				float: right;
+				width: 80%;
+				height: 20px;
+			}
+	.contant_rules_search{
+		float: left;
+		width: 20%;
+	}
+		.contant_rules_search span{
+			float: right;
+			padding: 5px 10px;
+			background-color:#2A72DB;
+			font-size: 13px;
+			color: #fff;
+		}
+	.contant_rules_table{
+		margin-top: 20px;
+		width: 100%;
+		text-align: center;
+		font-size: 13px;
+		border:1px solid #E9E9E9;
+	}
+		
+		.contant_rules_table thead{
+			background-color:#F7F7F7 ;
+		}
+			.contant_rules_table thead td{
+				white-space : nowrap;
+			}
+		.contant_rules_table td{
+			padding: 10px 5px;
+			color: #333333;
+			border-bottom: 1px solid #E9E9E9;
+		}
+	/* 分页器样式 */
+	.layui-laypage-page{
+		width: 100%;
+		text-align: right;
+	}
+		.layui-laypage-page a{
+			border:0px solid red !important;
+		}
+		.layui-laypage-page span{
+			border:0px solid red !important;
+		}
+		.layui-laypage-em{
+			background-color: #2A72DB !important;
+		}
+/* 医保规则查询结束 */

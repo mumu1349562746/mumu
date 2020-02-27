@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/tagcloud.css">
+		<link rel="stylesheet" href="./css/layui.css">
+	</head>
+	<body>
+		<div class="header">
+			<img class="header_img" src="./image/adus.png" alt="">
+			<div class="header_title_box">
+				<span class="header_title">临床辅助决策支持系统<span class="header_title_test">(试用)</span></span>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="contant">
+			<ul class="contant_card"></ul>
+			<div class="contant_alert" style="display:none;"></div>
+			<div class="contant_search contant_box" >
+				<!-- style="display:none" -->
+				<input class="contant_search_input" onfocus='clean(this)' placeholder="可以试试搜索高血压、血糖、骨炎灵片、头晕、癌胚抗原等" type="text" value='可以试试搜索高血压、血糖、骨炎灵片、头晕、癌胚抗原等'>
+				<div class="contant_search_pointer">
+					<img src="./image/search.png" alt="">
+				</div>
+				<div class="clear"></div>
+				<ul class="contant_search_list"></ul>
+			</div>
+			<div class="contant_rules contant_box" style="display:none">
+				<div class="close">
+					<img class="close_img" src="./image/weikaitong.6f462a16.png" alt="">
+					<h1 class="close_text">此功能暂未开通，敬请期待</h1>
+				</div>
+			</div>
+			<div class="contant_pic contant_box" style="display:none">
+				<div class="close">
+					<img class="close_img" src="./image/weikaitong.6f462a16.png" alt="">
+					<h1 class="close_text">此功能暂未开通，敬请期待</h1>
+				</div>
+			</div>
+			<div class="contant_data contant_box" style="display:none">
+				<div class="close">
+					<img class="close_img" src="./image/weikaitong.6f462a16.png" alt="">
+					<h1 class="close_text">此功能暂未开通，敬请期待</h1>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/tagcloud.js"></script>
+		<script src="./js/layui.js"></script>
+		<script src="./bundle.js"></script>
+		<script>
+			function clean(obj){
+				$(obj).val('')
+			}
+		</script>
+	</body>
+</html>
